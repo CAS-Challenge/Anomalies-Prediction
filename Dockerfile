@@ -7,7 +7,7 @@ RUN pip install --no-cache-dir --upgrade pip
 
 # Copy requirements & install
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.prod.txt
 
 # Copy code and model
 COPY src ./src
